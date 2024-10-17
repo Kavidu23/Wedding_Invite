@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: #f4f7f4;
+    --accent-color: #e74c3c;
+    --header-color: #18311d;
+    --text-color: #333;
+  }
+
+  
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--header-color) ;
+       
+}
+
+.header a{
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.mid_body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topic{
+    font-size: 4.5rem;
+    text-align: justify;
+    color: var(--header-color);
+    font-family: "Montaga", serif;
+    font-weight: 400;
+}
+
+.explain{
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.mid_body{
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+button{
+    margin-top: 20px;
+    background-color: var(--header-color);
+    border-style: none;
+    color: var(--primary-color);
+    padding: 20px;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 10rem;
+}
+
+.image img{
+    border-radius: 15rem;
+}
+
+.desc_one p{
+    margin-top: 20px;
+}
+
+.sec_body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+
+.info{
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.topic1,.topic2,.topic3,.topic4{
+    font-size: 1.75rem;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.desc{
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+    margin-top: 10px;
+
+}
+
+.third_body{
+    margin-top: 10rem ;
+}
+
+.paragraph p{
+    text-align: center;
+}
+
+.titlethird{
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--header-color);
+}
+
+.textthird{
+    font-size: 1.75rem;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    
+}
+
+.sectionone{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    position: relative;
+    margin-bottom: 0;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+button:hover{
+    background-color: #18311dea;
+    cursor: pointer;
+}
+
+
+form{
+    background-color: var(--secondary-color);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    font-style: italic;
+}
+
+.name, .mail{
+    width: 20rem;
+    padding: 10px;
+}
+
+textarea{
+    resize: none;
+    padding: 10px;
+}
+
+
+@media(max-width:1200px){
+    img{
+        width: 400px;
+        height: 500px;
+    }
+
+    .sec_body{
+        gap: 60px;
+    }
+}
+
+@media(max-width:1143px){
+    .mid_body{
+        gap: 60px;
+    }
+}
+
+@media(max-width:800px){
+    .sec_body{
+        
+        flex-direction: column;
+    }
+     br{
+        display: none;
+     }
+    
+    .mid_body img{
+        display: none;
+    }
+}
+
+@media(max-width:723px){
+    .topic{
+        font-size: 3rem;
+        text-align: left;
+    }
+}
+
+@media(max-width:656px){
+    .explain{
+        font-size: 1rem;
+        text-align: left; 
+    }
+}
+
+@media(max-width:580px){
+    .explain{
+        
+        text-align: left; 
+    }
+}
+
+@media(max-width:440px){
+    .sec_body img{
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .sectionone {
+
+      flex-direction: column;
+
+    }
+  
+    .card {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .card img {
+      width: 100%; 
+      height: auto; 
+    }
+}
